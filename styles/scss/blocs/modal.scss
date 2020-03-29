@@ -1,0 +1,122 @@
+/* The Modal (background) */
+.modal {
+  visibility: hidden; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* background-color: rgb(30, 30, 33); Fallback color
+  background-color: rgba(67, 67, 67, 0.83); /* Black w/ opacity
+  transition: background-color 0.5s ease-in-out 0.6s;*/
+}
+
+/*
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Modal Content/Box */
+.modal__content {
+  background-color: #131316;
+  background-color: rgba(0, 0, 0, 0.70);
+
+  margin: 0 auto;
+  padding: 1em;
+  height: 100vh;
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 2%;
+  font-family: VOGUE, sans-serif;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+.modal__trait {
+  width: 20%;
+  border: 1px solid;
+
+}
+
+.modal__close {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  z-index: 7;
+  margin-left: 2%;
+  width: 60px;
+
+
+}
+
+
+.modal__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__img {
+  display: block;
+margin: 1em auto;
+}
+
+.modal__description {
+  margin: 3% auto;
+  line-height: 1.3em;
+  width: 70%;
+}
+
+.video {
+  display: block;
+  margin: 3% auto;
+  width: 60vw;
+  height: 60vh;
+
+}
+
+.photo {
+  width: 70%;
+  height: auto;
+  margin-top: 5%;
+}

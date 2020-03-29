@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Portfolio | MARLIER Aurore</title>
+            <script src="https://kit.fontawesome.com/c25df7053b.js" crossorigin="anonymous"></script>
+            <link href="../styles/style.scss" rel="stylesheet">
+
+            <script>
+                /* OPEN THE MODAL IN GALLERY OF PROJECTS
+                */
+                function modal(x) {
+                    let num = x;
+                    let el = document.getElementById("modal-" + num);
+                    el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
+                    el.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+                /* CLOSE THE MODAL IN GALLERY OF PROJECTS
+                */
+                function close(x){
+                    let num = x;
+                    let modal = document.getElementById("modal-" + num);
+                    modal.style.visibility="hidden";
+                }
+            </script>
+        </head>
+<body>
+
+<nav class="menu">
+    <ul>
+        <li><a href="./../index.html">Accueil</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="projects.html">Projets</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="contact.html">A propos</a>
+            <span class="menu__trait"></span>
+        </li>
+    </ul>
+</nav>
+<a href="projects.html/#communication"> <i class="fas fa-arrow-left"></i></a>
+<div class=" grid">
+    <h1 class="com">COMMUNITY MANAGEMENT</h1>
+    <img src="../assets/img/MOC-2.png" alt="Mock-up" class="mockup">
+    <div class="text">
+        <p class="project__text">A l'occasion de mon projet tuteuré de 2ème année d'IUT MMI, j'ai eu l'occassion de gérer le compte instagram du département MMI
+            avec mon groupe. Nous nous sommes retrouvées face à de nombreuses problématiques  .</p>
+        <p class="project__text">Actuellement en service civique au sein de l'association padel events sports, j'ai pour mission
+            générale de participer à la communication évènementielle. Cette dernière inclut la gestion des réseaux sociaux de l'association ainsi que de ses évènements.
+            Cette expérience me permet de professionaliser ma pratique du community management en observant cette dernièredans le monde professionnel.
+            De la stratégie, à la planification en passant par la création de contenus graphique et audiovisuels, j'ai alors l'opportunité d'améliorer mon savoir ainsi que mon savoir-faire dans
+            la discipline suivante.
+            </p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./../assets/js/script.js"></script>
+</body>
+</html>
+

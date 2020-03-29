@@ -1,0 +1,54 @@
+.presentation {
+  position: absolute;
+  left: 8%;
+  top: 25%;
+  width: 80%;
+}
+
+/*
+.presentation__blockName {
+  transform: translateX(-8%);
+}*/
+.presentation__name {
+  display: inline-block;
+  margin-right: 0.2em;
+  letter-spacing: 3px;
+}
+
+.presentation__trait {
+  display: inline-block;
+  width: 40%;
+  border: 0.3px solid;
+
+}
+
+.presentation__description {
+
+  line-height: 1.8em;
+  font-size: 23px;
+  width: 80%;
+
+  > p {
+    margin: 3% 0;
+    font-style: italic;
+    font-size: 1.6em;
+  }
+
+  .alinea {
+  margin-top: 3%;
+    p{
+      margin-bottom: 1em;
+      span {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      i {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+
+}

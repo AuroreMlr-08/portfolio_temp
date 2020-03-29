@@ -1,0 +1,31 @@
+.owl-carousel .owl-stage-outer {
+ /* overflow: visible;*/
+  object-fit: cover;
+}
+
+
+
+.owl-dots {
+  margin-bottom: 20px;
+
+  .owl-dot:focus {
+    outline: none !important;
+  }
+}
+.owl-nav{
+  display: flex;
+  justify-content: space-between;
+  z-index: -3 !important;
+  width: 115%;
+  //position: absolute;
+ // top: 45%;
+  transform: translate(-7.5%, -5.6em);
+  font-size: 3em;
+  button:focus {
+    outline: none;
+  }
+
+}
+.owl-theme .owl-nav [class*=owl-] {
+  background: none !important;
+}

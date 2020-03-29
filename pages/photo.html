@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio | MARLIER Aurore</title>
+    <script src="https://kit.fontawesome.com/c25df7053b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="../styles/style.scss" rel="stylesheet">
+
+    <script>
+        /* OPEN THE MODAL IN GALLERY OF PROJECTS
+        */
+        function modal(event, x) {
+            event.preventDefault();
+            let num = x;
+            let el = document.getElementById("modal-" + num);
+            el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
+            el.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+    </script>
+</head>
+<body>
+
+<nav class="menu">
+    <ul>
+        <li><a href="./../index.html">Accueil</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="projects.html">Projets</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="contact.html">A propos</a>
+            <span class="menu__trait"></span>
+        </li>
+    </ul>
+</nav></nav>
+<a href="projects.html/#photographie"> <i class="fas fa-arrow-left"></i></a>
+<div class="owl-carousel owl-carousel--v2 owl-theme container">
+    <div class="gallery-graph project item">
+        <figure class="gallery__item gallery__item--1-graph">
+            <img src="./../assets/img/photo/galery_1/jda-5-min.jpg" class="gallery__img" alt="Image 2">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 1)">PHOTOGRAPHIE<br>EVENEMENTIELLE</a>
+        </figure>
+        <figure class="gallery__item gallery__item--2-graph">
+            <img src="./../assets/img/photo/galery_1/jpo-1-min.jpg" class="gallery__img" alt="Image 3">
+            <a href="#" class="gallery__item__text" onclick="modal(event,2)">PHOTOGRAPHIE<br>EVENEMENTIELLE</a>
+            <!--Modal-->
+        </figure>
+        <figure class="gallery__item gallery__item--3-graph">
+            <img src="./../assets/img/photo/galery_1/job-dating-13-min.jpg" class="gallery__img"
+                 alt="Illustration Angouleme">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 3)">PHOTOGRAPHIE<br>EVENEMENTIELLE</a>
+        </figure>
+        <figure class="gallery__item gallery__item--4-graph">
+            <img src="./../assets/img/photo/galery_1/job-dating-24-min.jpg" class="gallery__img" alt="Image 5">
+            <a href="#" class="gallery__item__text" onclick="modal(event,4)">PHOTOGRAPHIE<br>EVENEMENTIELLE</a>
+        </figure>
+        <figure class="gallery__item gallery__item--5-graph">
+            <img src="./../assets/img/photo/galery_1/jda-4-min.jpg" class="gallery__img" alt="Image 6">
+            <a href="#" class="gallery__item__text" onclick="modal(event,5)">PHOTOGRAPHIE<br>EVENEMENTIELLE</a>
+        </figure>
+    </div>
+    <div class="gallery-graph project item">
+        <figure class="gallery__item gallery__item--1-graph">
+            <img src="./../assets/img/photo/galery_2/IMG_9297-min.jpg" class="gallery__img" alt="Image 2">
+            <a href="#" class="gallery__item__text" onclick="modal(event,6)">PHOTOGRAPHIE<br>PORTRAIT</a>
+
+        </figure>
+        <figure class="gallery__item gallery__item--2-graph">
+            <img src="./../assets/img/photo/galery_2/IMG_9985-min.jpg" class="gallery__img" alt="Image 3">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 7)">PHOTOGRAPHIE<br>PORTRAIT</a>
+            <!--Modal-->
+        </figure>
+        <figure class="gallery__item gallery__item--3-graph">
+            <img src="./../assets/img/photo/galery_2/GXJF4726-min.JPG" class="gallery__img"
+                 alt="Illustration Angouleme">
+            <a href="#" class="gallery__item__text" onclick="modal(event,8)">PHOTOGRAPHIE<br>PORTRAIT</a>
+        </figure>
+        <figure class="gallery__item gallery__item--4-graph">
+            <img src="./../assets/img/photo/galery_2/IMG_9225-min.JPG" class="gallery__img" alt="Image 5">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 9)">PHOTOGRAPHIE<br>PORTRAIT</a>
+            <div id="modal-9" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <a href="" class="modal__close" onclick="modal(event, 9)"><img
+                            src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    <img src="./../assets/img/photo/galery_2/IMG_9225-min.JPG" class="modal__img__v1 photo"
+                         alt="Image 2">
+                </div>
+
+            </div>
+        </figure>
+        <figure class="gallery__item gallery__item--5-graph">
+            <img src="./../assets/img/photo/galery_2/IMG_9352-min.JPG" class="gallery__img" alt="Image 6">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 10)">PHOTOGRAPHIE<br>PORTRAIT</a>
+        </figure>
+    </div>
+</div>
+<!--Modal
+<div class="owl-carousel owl-theme container">-->
+    <div id="modal-1" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="#" class="modal__close" onclick="document.getElementById('modal-1').style.visibility = 'hidden'"><img src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+            <img src="./../assets/img/photo/galery_1/jda-5-min.jpg" class="modal__img photo" alt="Image 2">
+        </div>
+    </div>
+    <div id="modal-2" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="#" class="modal__close" onclick="modal(event,2)"><img src="./../assets/img/iconfinder-icon.svg" alt="close" class="modal__close" onclick="close(2)"></a>
+            <img src="./../assets/img/photo/galery_1/jpo-1-min.jpg" class="modal__img photo" alt="Image 2">
+        </div>
+    </div>
+    <div id="modal-3" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event, 3)"><img src="./../assets/img/iconfinder-icon.svg"
+                                                                           alt="close"></a>
+            <img src="./../assets/img/photo/galery_1/job-dating-13-min.jpg" class="modal__img photo"
+                 alt="Image 2">
+        </div>
+    </div>
+    <div id="modal-4" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event,4)"><img
+                    src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+            <img src="./../assets/img/photo/galery_1/job-dating-24-min.jpg" class="modal__img photo"
+                 alt="Image 2"
+            >
+        </div>
+
+    </div>
+    <div id="modal-5" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event, 5)">
+                <img src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+
+            <img src="./../assets/img/photo/galery_1/jda-4-min.jpg" class="modal__img photo" alt="Image 2">
+        </div>
+
+    </div>
+    <div id="modal-6" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" onclick="close(event, 6)" class="modal__close"><img src="./../assets/img/iconfinder-icon.svg"
+                                                                           alt="close"></a>
+            <img src="./../assets/img/photo/galery_2/IMG_9297-min.jpg" class="modal__img photo"
+                 alt="Image 2">
+        </div>
+
+    </div>
+    <div id="modal-7" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event, 7)">
+                <img src="./../assets/img/iconfinder-icon.svg" alt="close">
+            </a>
+            <img src="./../assets/img/photo/galery_2/IMG_9985-min.jpg" class="modal__img photo"
+                 alt="Image 2">
+        </div>
+    </div>
+    <div id="modal-8" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event, 8)"><img src="./../assets/img/iconfinder-icon.svg"
+                                                                           alt="close"></a>
+            <img src="./../assets/img/photo/galery_2/GXJF4726-min.JPG" class="modal__img photo"
+                 alt="Image 2">
+        </div>
+
+    </div>
+    <div id="modal-10" class="modal item">
+        <!-- Modal content -->
+        <div class="modal__content">
+            <a href="" class="modal__close" onclick="modal(event, 10)">
+                <img src="./../assets/img/iconfinder-icon.svg" alt="close">
+            </a>
+            <img src="./../assets/img/photo/galery_2/IMG_9352-min.JPG" class="modal__img photo"
+                 alt="Image 2">
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./../assets/js/script.js"></script>
+</body>
+</html>

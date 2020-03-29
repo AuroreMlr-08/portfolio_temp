@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio | MARLIER Aurore</title>
+    <script src="https://kit.fontawesome.com/c25df7053b.js" crossorigin="anonymous"></script>
+    <link href="../styles/style.scss" rel="stylesheet">
+
+    <script>
+        /* OPEN THE MODAL IN GALLERY OF PROJECTS
+        */
+        function modal(event, x) {
+            event.preventDefault();
+            let num = x;
+            let el = document.getElementById("modal-" + num);
+            el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
+            el.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+    </script>
+</head>
+<body>
+<nav class="menu">
+    <ul>
+        <li><a href="./../index.html">Accueil</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="projects.html">Projets</a>
+            <span class="menu__trait"></span>
+        </li>
+        <li><a href="contact.html">A propos</a>
+            <span class="menu__trait"></span>
+        </li>
+    </ul>
+</nav>
+<a href="projects.html/#audiovisuel" > <i class="fas fa-arrow-left"></i></a>
+<div class="container">
+    <div class="gallery-video">
+
+        <figure class="gallery__item gallery__item--1-video">
+            <img src="./../assets/img/vignette_vid/LEFIVE_test.jpg" class="gallery__img" alt="Image 2">
+            <a href="#" class="gallery__item__text" onclick="modal(event, 1)">SEMINAIRE <br>AFFLELOU-LEFIVE</a>
+            <!--Modal-->
+            <div id="modal-1" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">SEMINAIRE</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" onclick="modal(event,1)" class="modal__close"><img
+                                src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation du montage </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/hFuXwmsWCfA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+
+                </div>
+
+            </div>
+
+        </figure>
+        <figure class="gallery__item gallery__item--2-video">
+            <img src="./../assets/img/vignette_vid/MMI_v4.jpg" class="gallery__img" alt="Image 3">
+            <a href="#" class="gallery__item__text" onclick="modal(event,2)">Film Promotionnel</a>
+            <!--Modal-->
+            <div id="modal-2" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">Film Promotionnel</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" class="modal__close" onclick="modal(event,2)">
+                            <img src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation de la captation et du montage </p>
+                    <div class="modal__body">
+                        <iframe class="video" src="https://www.youtube.com/embed/LYrl6UixjDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </figure>
+        <figure class="gallery__item gallery__item--3-video">
+            <img src="./../assets/img/vignette_vid/JOB_DATING_v1.jpg" class="gallery__img" alt="Illustration Angouleme">
+            <a href="#" class="gallery__item__text" onclick="modal(event,3)"> JOBDATING<br>EVENT MMI </a>
+            <div id="modal-3" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">JOBDATING</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" class="modal__close" onclick="modal(event,3)"><img
+                                src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation de la captation et du montage </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/KzYHEkuAQoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </figure>
+        <figure class="gallery__item gallery__item--4-video">
+            <img src="./../assets/img/vignette_vid/LEFIVE_clip_v1.jpg" class="gallery__img" alt="Image 5">
+            <a href="#" class="gallery__item__text" onclick="modal(event,4)">Film evenementiel <br> Animations de texte</a>
+            <div id="modal-4" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">Film evenementiel</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" class="modal__close" onclick="modal(event,4)"><img
+                                src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation des insertions textes</p>
+                    <iframe class="video" src="https://www.youtube.com/embed/aJTWt8Pt74c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </figure>
+        <figure class="gallery__item gallery__item--5-video">
+            <img src="./../assets/img/vignette_vid/cvvide.PNG" class="gallery__img" alt="Image 6">
+            <a href="#" class="gallery__item__text" onclick="modal(event,5)">CV Video</a>
+            <div id="modal-5" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">CV video</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" class="modal__close" onclick="modal(event,5)"><img
+                                src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation de la captation et du montage </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/r5t8mi1nls4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </figure>
+        <figure class="gallery__item gallery__item--6-video">
+            <img src="./../assets/img/vignette_vid/TEASER_HPO_v1.jpg" class="gallery__img" alt="Image 6">
+            <a href="#" class="gallery__item__text" onclick="modal(event,6)">TEASER <br> HEAD PADEL OPEN</a>
+            <div id="modal-6" class="modal">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <header class="modal__header">
+                        <span class="modal__trait"></span>
+                        <h2 class="modal__title">TEASER HEAD PADEL OPEN</h2>
+                        <span class="modal__trait"></span>
+                        <a href="" class="modal__close" onclick="modal(event,6)"><img
+                                src="./../assets/img/iconfinder-icon.svg" alt="close"></a>
+                    </header>
+                    <p>Réalisation du montage </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/8C5LXIOvXYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </figure>
+
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./../assets/js/script.js"></script>
+</body>
+</html>

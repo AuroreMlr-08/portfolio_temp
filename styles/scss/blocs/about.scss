@@ -1,0 +1,44 @@
+/*SECTION ABOUT*/
+.about {
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  /* transform: translateY(-50%);*/
+  /* tiré de la moitié de sa propre hauteur */
+}
+
+.about__photo {
+  img {
+    height: 64vh;
+  }
+}
+
+.about__text {
+  margin-left: 8%;
+  width: 35%;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.about__button {
+  background: none;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 0.8em;
+  border: 1px solid white;
+  cursor: pointer;
+
+  i {
+    color: white;
+  }
+
+  &:hover{
+    background-color: white;
+  }
+  &:hover a{
+    color: black !important;
+  }
+}

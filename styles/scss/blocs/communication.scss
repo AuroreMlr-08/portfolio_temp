@@ -1,0 +1,22 @@
+/* ESSAYER DE FAIRE UNE GRID POUR CETTE MISE EN PAGE*/
+
+.grid {
+  display: grid;
+
+  grid-template-rows: 120px 200px 400px auto;
+  grid-template-columns: 100px 40% auto 200px;
+}
+.mockup {
+  grid-row: 3;
+  grid-column: 1/3;
+
+}
+.com{
+  grid-row-start: 2;
+  grid-column: 2;
+
+}
+.text {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
