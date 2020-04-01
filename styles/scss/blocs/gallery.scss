@@ -1,6 +1,13 @@
 .container {
   width: 60%;
-  margin: 4rem auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile{
+    width: 85%;
+    overflow: hidden;
+  }
 }
 
 .gallery__item {
@@ -44,12 +51,19 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  @include mobile {
+    font-size: 0.4em;
+  }
 }
 
 .fa-arrow-left {
   position: absolute;
   top: 7%;
   left: 5%;
+  @include mobile{
+    font-size: 0.8em;
+    top: 5%;
+    left: 9%;
+  }
 }
-
 

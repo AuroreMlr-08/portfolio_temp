@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Portfolio | MARLIER Aurore</title>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
     <link href="styles/css/style.css" rel="stylesheet">
 </head>
 <body><!--
 <div class="loader" >
     <h1></h1>
 </div>-->
+<div class="menuMobile">
+    <div class="menuMobile__burger" id="burger">
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+    </div>
+</div>
+<nav class="navMobile menu-icon menu-icon-active" id="mySidenav">
+    <div class="navMobile__links">
+        <a href="#">ACCUEIL</a>
+        <a href="pages/projects.html">PROJETS</a>
+        <a href="pages/contact.html">A PROPOS</a>
+    </div>
+</nav>
 <nav class="menu">
     <ul>
         <li><a href="#Accueil">Accueil</a>

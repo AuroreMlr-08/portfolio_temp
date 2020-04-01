@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio | MARLIER Aurore</title>
     <script src="https://kit.fontawesome.com/c25df7053b.js" crossorigin="anonymous"></script>
-    <link href="../styles/style.scss" rel="stylesheet">
+    <link href="./../styles/css/style.css" rel="stylesheet">
 
 </head>
 <body>
+<div class="menuMobile">
+    <div class="menuMobile__burger" id="burger">
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+    </div>
+</div>
+<nav class="navMobile menu-icon menu-icon-active" id="mySidenav">
+    <div class="navMobile__links">
+        <a href="./../index.php">ACCUEIL</a>
+        <a href="projects.html">PROJETS</a>
+        <a href="contact.html">A PROPOS</a>
+    </div>
+</nav>
 <nav class="menu">
     <ul>
-        <li><a href="#Accueil">Accueil</a>
+        <li><a href="./../index.php">Accueil</a>
             <span class="menu__trait"></span>
         </li>
-        <li><a href="/pages/projects.html">Projets</a>
+        <li><a href="projects.html">Projets</a>
             <span class="menu__trait"></span>
         </li>
-        <li><a href="/pages/contact.html">A propos</a>
+        <li><a href="contact.html">A propos</a>
             <span class="menu__trait"></span>
         </li>
     </ul>

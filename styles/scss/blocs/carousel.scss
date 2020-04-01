@@ -1,8 +1,12 @@
 .owl-carousel .owl-stage-outer {
- /* overflow: visible;*/
+  /* overflow: visible;*/
   object-fit: cover;
 }
 
+.owl-carousel.owl-loaded {
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
 
 
 .owl-dots {
@@ -12,20 +16,29 @@
     outline: none !important;
   }
 }
-.owl-nav{
+
+.owl-nav {
   display: flex;
   justify-content: space-between;
   z-index: -3 !important;
   width: 115%;
   //position: absolute;
- // top: 45%;
+  // top: 45%;
   transform: translate(-7.5%, -5.6em);
   font-size: 3em;
+
   button:focus {
     outline: none;
   }
 
 }
+
 .owl-theme .owl-nav [class*=owl-] {
   background: none !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  @include mobile {
+    margin-top: 20px;
+  }
 }

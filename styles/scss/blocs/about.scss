@@ -1,17 +1,31 @@
 /*SECTION ABOUT*/
 .about {
-  margin: 10% auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  /* transform: translateY(-50%);*/
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
   /* tiré de la moitié de sa propre hauteur */
+  @include mobile {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
 .about__photo {
+  text-align: center;
+
   img {
     height: 64vh;
+    @include mobile {
+      height: 30vh;
+      object-fit: cover;
+      width: 100%;
+      margin-top: 25px;
+    }
   }
 }
 
@@ -20,6 +34,14 @@
   width: 35%;
   font-size: 18px;
   line-height: 2em;
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.6em;
+    margin-top: 1.7em;
+    margin-left: 0px;
+    width: auto;
+
+  }
 }
 
 .about__button {
@@ -30,15 +52,19 @@
   font-size: 0.8em;
   border: 1px solid white;
   cursor: pointer;
+  @include mobile {
+    margin-bottom: 10px;
+  }
 
   i {
     color: white;
   }
 
-  &:hover{
+  &:hover {
     background-color: white;
   }
-  &:hover a{
+
+  &:hover a {
     color: black !important;
   }
 }

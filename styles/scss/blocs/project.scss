@@ -5,20 +5,33 @@
 
   /* margin-top: -50vh;
    transform: translateY(50%);*/
-
+  @include mobile {
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
 }
 
 .project__title {
   transform: rotate(-90deg) translate(20px, -600px);
+  @include mobile {
+    transform: rotate(-90deg) translate(-260px, -100px);
+  }
 }
 
 .project__title h1 {
   font-size: 3em;
   LETTER-SPACING: 3px;
+  @include mobile {
+    font-size: 1.7em;
+  }
 }
 
 .project__title p {
   display: inline-block;
+  @include mobile {
+    font-size: 0.7em;
+
+  }
 }
 
 .subtitle {
@@ -30,11 +43,17 @@
   vertical-align: middle;
   display: inline-block;
   margin-left: 30px;
+  @include mobile {
+  margin-left:0px;
+  }
 }
 
 .project__description {
   width: 30%;
   margin: 0 7%;
+  @include mobile {
+    display: none;
+  }
 
 }
 
@@ -42,16 +61,22 @@
   line-height: 1.7em;
   font-size: 20px;
   margin-top: 30px;
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 .project__BlockIllustration {
-  /* POSITION: absolute;
-   top: 0px;
-   left: 50vw;*/
   z-index: 3;
   width: 30%;
   height: 80vh;
   position: relative;
+
+  @include mobile {
+    height: 70vh;
+    width: 55%;
+    margin-right: 10px;
+  }
 
   &:hover img {
     filter: blur(1px) opacity(70%);
@@ -69,6 +94,7 @@
 .project__illustration {
   object-fit: cover;
   height: 100%;
+
 }
 
 .project__BlockIllustration__text {
@@ -78,11 +104,18 @@
   top: 42%;
   left: 21%;
   opacity: 0;
+  @include mobile{
+    top: 37%;
+    left: 7%;
+  }
 
   p:first-child {
     font-family: VOGUE, sans-serif;
     letter-spacing: 2px;
     font-size: 1.5em;
+    @include mobile{
+      font-size: 1em;
+    }
   }
 
   hr {
@@ -90,8 +123,12 @@
     width: 80%;
 
   }
-  p:last-child{
-  text-transform: lowercase;
+
+  p:last-child {
+    text-transform: lowercase;
     font-size: 0.8em;
+    @include mobile{
+      font-size: 0.5em;
+    }
   }
 }

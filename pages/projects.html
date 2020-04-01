@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link href="../styles/style.scss" rel="stylesheet">
+    <link href="./../styles/css/style.css" rel="stylesheet">
 
 </head>
 <body>
+<div class="menuMobile">
+    <div class="menuMobile__burger" id="burger">
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+        <span class="menuMobile__span"></span>
+    </div>
+</div>
+<nav class="navMobile menu-icon menu-icon-active" id="mySidenav">
+    <div class="navMobile__links">
+        <a href="./../index.php">ACCUEIL</a>
+        <a href="#">PROJETS</a>
+        <a href="contact.html">A PROPOS</a>
+    </div>
+</nav>
 <nav class="menu">
     <ul>
-        <li><a href="./../index.html">Accueil</a>
+        <li><a href="./../index.php">Accueil</a>
             <span class="menu__trait"></span>
         </li>
         <li><a href="#">Projets</a>
@@ -26,27 +40,35 @@
 </nav>
 <div class="owl-carousel owl-carousel--v1 owl-theme">
     <section class="project item" data-hash="graphisme">
+        <div class="all">
         <div class="project__title">
             <h1>GRAPHISME</h1>
-            <p>ILLUSTRATION</p>
-            <hr class="project__title__trait">
+            <div class="subtitle">
+                <p>ILLUSTRATION</p>
+                <hr class="project__title__trait">
+            </div>
         </div>
         <div class="oj">
             <div class="project__description">
-                <p class="project__text">Ma formation en DUT MMI m’a permis de découvrir de nouveaux outils pour développer ma créativité tels qu’Illustrator ou encore Photoshop. Il y a quelques temps, j’ai commencé à réaliser des illustrations. Ces dernières se basent sur des paysages ou des personnes qui me sont familières. </p>  </div>
+                <p class="project__text">Ma formation en DUT MMI m’a permis de découvrir de nouveaux outils pour
+                    développer ma créativité tels qu’Illustrator ou encore Photoshop. Il y a quelques temps, j’ai
+                    commencé à réaliser des illustrations. Ces dernières se basent sur des paysages ou des personnes qui
+                    me sont familières. </p></div>
             <div class="project__BlockIllustration">
                 <a href="graphisme.html"> <img src="./../assets/img/Fichier%203-100.jpg" class="project__illustration">
-                <div class="project__BlockIllustration__text">
-                    <p>Click on me</p>
-                    <hr>
-                    <p>To see more projects</p>
-                </div></a>
+                    <div class="project__BlockIllustration__text">
+                        <p>Click on me</p>
+                        <hr>
+                        <p>To see more projects</p>
+                    </div>
+                </a>
             </div>
+        </div>
         </div>
     </section>
     <section class="project item" data-hash="audiovisuel">
         <div class="project__title">
-            <h1>Audiovisuel</h1>
+            <h1>AUDIOVISUEL</h1>
             <div class="subtitle">
                 <p>VIDEO ET MOTION</p>
                 <hr class="project__title__trait">
@@ -54,62 +76,77 @@
         </div>
         <div class="oj">
             <div class="project__description">
-                <p class="project__text"> J'ai découvert et appris les bases du montage il y a quelques années en autodidacte.
-                    Grâce à ma formation en IUT, j'ai pu acquérir des bases solides dans le domaine de l'audiovisuel. </p>
-            <p class="project__text">De la captation
-                à la post-production en passant par le sound design et le motion design, mon intérêt pour l'audiovisuel ne cesse de s'aggrandir.</p></div>
+                <p class="project__text"> J'ai découvert et appris les bases du montage il y a quelques années en
+                    autodidacte.
+                    Grâce à ma formation en IUT, j'ai pu acquérir des bases solides dans le domaine de
+                    l'audiovisuel. </p>
+                <p class="project__text">De la captation
+                    à la post-production en passant par le sound design et le motion design, mon intérêt pour
+                    l'audiovisuel ne cesse de s'aggrandir.</p></div>
             <div class="project__BlockIllustration">
-                <a href="video.html"><img src="./../assets/img/vignette_vid/LEFIVE_test.jpg" class="project__illustration">
-                <div class="project__BlockIllustration__text">
-                    <p>Click on me</p>
-                    <hr>
-                    <p>To see more projects</p>
-                </div></a>
+                <a href="video.html"><img src="./../assets/img/vignette_vid/LEFIVE_test.jpg"
+                                          class="project__illustration">
+                    <div class="project__BlockIllustration__text">
+                        <p>Click on me</p>
+                        <hr>
+                        <p>To see more projects</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <section class="project item" data-hash="photographie">
         <div class="project__title">
             <h1>PHOTOGRAPHIE</h1>
-            <p>PORTRAITS - EVENEMENTS</p>
-            <hr class="project__title__trait">
+            <div class="subtitle">
+                <p>PORTRAITS - EVENEMENTS</p>
+                <hr class="project__title__trait">
+            </div>
         </div>
         <div class="oj">
             <div class="project__description">
-                <p class="project__text">Je vous laisse à présent découvrir mes travaux en photographie. J'ai eu l'occasion cette année de découvrir la photographie dans le cadre évènementiel
-               en photographiant durant divers évènements de mon IUT. Par ailleurs, j'ai toujours apprécié réalisé de la photographie de portrait qui laisse davantage place à la créativité.
+                <p class="project__text">Je vous laisse à présent découvrir mes travaux en photographie. J'ai eu
+                    l'occasion cette année de découvrir la photographie dans le cadre évènementiel
+                    en photographiant durant divers évènements de mon IUT. Par ailleurs, j'ai toujours apprécié réalisé
+                    de la photographie de portrait qui laisse davantage place à la créativité.
 
 
             </div>
             <div class="project__BlockIllustration">
-                <a href="photo.html" ><img src="./../assets/img/photo/galery_2/IMG_9225-min.jpg" style="transform: translateX(10px)" class="project__illustration">
-                <div class="project__BlockIllustration__text">
-                    <p>Click on me</p>
-                    <hr>
-                    <p>To see more projects</p>
-                </div></a>
+                <a href="photo.html"><img src="./../assets/img/photo/galery_2/IMG_9225-min.jpg"
+                                          style="transform: translateX(10px)" class="project__illustration">
+                    <div class="project__BlockIllustration__text">
+                        <p>Click on me</p>
+                        <hr>
+                        <p>To see more projects</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <section class="project item" data-hash="communication">
         <div class="project__title">
-            <h1 >Communication</h1>
-            <p>SOCIAL MEDIA</p>
-            <hr class="project__title__trait">
+            <h1>COMMUNICATION</h1>
+            <div class="subtitle">
+                <p>SOCIAL MEDIA</p>
+                <hr class="project__title__trait">
+            </div>
         </div>
         <div class="oj">
             <div class="project__description">
                 <p class="project__text">J'ai eu l'occasion à plusieurs reprises de réaliser du community management.
-                De la stratégie social media en passant par l'organisation ainsi que la création, j'ai pu acquérir des bases solides en community management.
-                <p class="project__text"> </p>
+                    De la stratégie social media en passant par l'organisation ainsi que la création, j'ai pu acquérir
+                    des bases solides en community management.
+                <p class="project__text"></p>
             </div>
             <div class="project__BlockIllustration">
                 <a href="communication.html"><img src="./../assets/img/jda-3.jpg" class="project__illustration">
-                <div class="project__BlockIllustration__text">
-                    <p>Click on me</p>
-                    <hr>
-                    <p>To see more projects</p>
-                </div></a>
+                    <div class="project__BlockIllustration__text">
+                        <p>Click on me</p>
+                        <hr>
+                        <p>To see more projects</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

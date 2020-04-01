@@ -1,17 +1,20 @@
 /*$breakpoints: (
-        mobile: 599px,
-
+        mobile: 320px,
 );
-
-@mixin mobile-only {
-   @media screen and (min-width: map-get($breakpoints, mobile)) {
-  grid-template-columns: 1fr;
-}
-
-@mixin for-phone-only {
-  @media (max-width: 599px) { @content;
+*/
+@mixin mobile {
+  @media(min-width: 320px) and (max-width: 500px) {
+    @content;
   }
 }
+/*
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) { @content; }
 }

@@ -1,4 +1,7 @@
-
+$('#burger').click(function() {
+    $(this).toggleClass('toggle-active');
+    $('#mySidenav').toggleClass('nav-active');
+});
 /*CAROUSEL */
 $(document).ready(function () {
     // Declare Carousel jquery object

@@ -1,21 +1,27 @@
-.menu {
+.menu{
   transform: rotate(-90deg);
   position: absolute;
   right: -13%;
   bottom: 35%;
   text-transform: uppercase;
   z-index: 2;
+  @include mobile{
+    display: none;
+  }
 }
-ul{
+
+ul {
   display: flex;
 
 }
+
 li {
   width: 22vh;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  a{
+
+  a {
     margin-right: 4px;
   }
 }

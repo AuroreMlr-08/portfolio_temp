@@ -5,7 +5,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <title>Portfolio | MARLIER Aurore</title>
             <script src="https://kit.fontawesome.com/c25df7053b.js" crossorigin="anonymous"></script>
-            <link href="../styles/style.scss" rel="stylesheet">
+            <link href="./../styles/css/style.css" rel="stylesheet">
 
             <script>
                 /* OPEN THE MODAL IN GALLERY OF PROJECTS
@@ -16,20 +16,13 @@
                     el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
                     el.style.backgroundColor = "rgba(0,0,0,0.4)";
                 }
-                /* CLOSE THE MODAL IN GALLERY OF PROJECTS
-                */
-                function close(x){
-                    let num = x;
-                    let modal = document.getElementById("modal-" + num);
-                    modal.style.visibility="hidden";
-                }
             </script>
         </head>
 <body>
 
 <nav class="menu">
     <ul>
-        <li><a href="./../index.html">Accueil</a>
+        <li><a href="./../index.php">Accueil</a>
             <span class="menu__trait"></span>
         </li>
         <li><a href="projects.html">Projets</a>
@@ -40,7 +33,7 @@
         </li>
     </ul>
 </nav>
-<a href="projects.html/#communication"> <i class="fas fa-arrow-left"></i></a>
+<a href="projects.html#communication"> <i class="fas fa-arrow-left"></i></a>
 <div class=" grid">
     <h1 class="com">COMMUNITY MANAGEMENT</h1>
     <img src="../assets/img/MOC-2.png" alt="Mock-up" class="mockup">

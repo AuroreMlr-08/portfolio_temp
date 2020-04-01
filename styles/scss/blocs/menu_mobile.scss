@@ -1,0 +1,104 @@
+.menuMobile{
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+.navMobile {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.68)!important; /* Black*/
+  opacity: 0.1%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  a {
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-family: 'Playfair Display', 'IM Fell French Canon SC', serif;
+    font-size:  1em;
+
+
+  }
+}
+
+.menuMobile__burger {
+  width: 30px;
+  height: 23px;
+  border: 0;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.menuMobile__span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1.3px;
+  transition: transform .2s ease, top .2s ease .2s, bottom .2s ease .2s, opacity .2s ease .2s;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.menuMobile__span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+.menuMobile__span:nth-child(1) {
+  top: 0;
+}
+
+.menuMobile__span:nth-child(3) {
+  bottom: 0;
+}
+
+.toggle-active .menuMobile__span {
+  background-color: white;
+  transition: transform .2s ease .2s, top .2s ease, bottom .2s ease, opacity .2s ease;
+}
+
+.toggle-active .menuMobile__span:nth-child(1) {
+  transform: rotate(45deg);
+  top: calc(50% - 1px);
+}
+
+.toggle-active .menuMobile__span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-active .menuMobile__span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: calc(50% - 1px);
+}
+
+
+
+.navMobile__links {
+  position: relative;
+  top: 20%;
+  padding: 20px;
+
+}
+
+.nav-active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  transition: ease-in-out 0.6s;
+
+}
